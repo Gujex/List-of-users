@@ -6,11 +6,8 @@ import SinglePage from "./Container/SinglePage/SinglePage";
 function App() {
   return (
     <>
-      {/* <div>
-        <MainList />
-      </div> */}
+    
       <div>
-        {/* <SinglePage/> */}
         <Routes>
           <Route path="/" element={<Navigate to="/Home" />} />
           <Route path="/Home" element={<MainList />} />

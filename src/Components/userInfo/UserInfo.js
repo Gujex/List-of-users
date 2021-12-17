@@ -11,7 +11,7 @@ function UserInfo({ user, address, loading }) {
         ) : (
           <div className="users">
             <div className="userInfo">
-              <img className="info_image" src={user.imageUrl} alt="userImg" />
+              <img className="info_image" src={user.imageUrl + "?" +  'v' + '=' + user.id}  alt="userImg" />
               <div className="info_info">
                 <div className="info_list">
                   <b>

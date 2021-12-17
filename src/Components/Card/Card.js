@@ -5,13 +5,13 @@ import Button from "../../UI/Button/Button";
 import "./card.css";
 
 function Card(props) {
-  const url = `SinglePage/${props.id}`;
+  const url = `/Home/SinglePage/${props.id}`;
   return (
     <div className="mainDiv" key={props.id}>
       <div className="img_card">
         <img
           className="listImage"
-          src={`${props.imageUrl}?v=${props.index}`}
+          src={`${props.imageUrl}?v=${props.id}`}
           alt="animalImage"
         />
         <div>
@@ -21,8 +21,8 @@ function Card(props) {
         </div>
         <p>{props.title}</p>
 
-        <Link to={url}>
-          <Button> Read more... </Button>
+        <Link   to={url}>
+          <Button > Read more... </Button>
         </Link>
       </div>
     </div>
